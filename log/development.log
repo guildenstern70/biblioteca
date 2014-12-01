@@ -447,3 +447,536 @@ Processing by BooksController#create as HTML
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkXM5ua8yUsc/GLn+eSCMPw+2nP1X28+56VTOBUyopY=", "book"=>{"author"=>"ewewew", "title"=>"weeew", "isbn"=>"weewew", "publisher"=>"weeww", "year"=>"ewewew"}, "commit"=>"Save Book"}
   Rendered text template (0.0ms)
 Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 18:30:00 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 148ms (Views: 127.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-01 18:30:00 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-01 18:30:00 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 18:30:01 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 18:30:01 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 18:30:01 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 18:30:01 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-01 18:30:01 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-01 18:30:01 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 18:30:01 +0100
+
+
+Started GET "/books/new" for 127.0.0.1 at 2014-12-01 18:31:11 +0100
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 91ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-01 18:31:11 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 18:31:11 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-01 18:31:11 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 18:31:11 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 18:31:11 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 18:31:11 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-01 18:31:11 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-01 18:31:11 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 18:31:11 +0100
+
+
+Started POST "/books" for 127.0.0.1 at 2014-12-01 18:31:19 +0100
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkXM5ua8yUsc/GLn+eSCMPw+2nP1X28+56VTOBUyopY=", "book"=>{"author"=>"efrfer", "title"=>"frrer", "isbn"=>"erffre", "publisher"=>"rfre", "year"=>"frfer"}, "commit"=>"Save Book"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 18:33:27 +0100
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 51ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 18:33:27 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-01 18:33:27 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 18:33:27 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 18:33:27 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 18:33:27 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-01 18:33:27 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-01 18:33:28 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-01 18:33:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 18:33:28 +0100
+
+
+Started GET "/books/new" for 127.0.0.1 at 2014-12-01 18:33:29 +0100
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2014-12-01 18:36:54 +0100
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 51ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 18:36:54 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 18:36:54 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-01 18:36:54 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-01 18:36:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 18:36:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 18:36:55 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-01 18:36:55 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-01 18:36:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 18:36:55 +0100
+
+
+Started POST "/books" for 127.0.0.1 at 2014-12-01 18:37:04 +0100
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkXM5ua8yUsc/GLn+eSCMPw+2nP1X28+56VTOBUyopY=", "book"=>{"author"=>"Alessio", "title"=>"dòkweòew", "isbn"=>"dklòeòlw", "publisher"=>"sklòeòe", "year"=>"eòkleòew"}, "commit"=>"Save Book"}
+Completed 500 Internal Server Error in 3ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/books_controller.rb:7:in `create'
+
+
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 18:40:30 +0100
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 59ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 18:40:31 +0100
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 18:40:32 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-01 18:40:32 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-01 18:40:32 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 18:40:32 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 18:40:32 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 18:40:32 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-01 18:40:32 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-01 18:40:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 18:40:32 +0100
+
+
+Started GET "/books/new" for 127.0.0.1 at 2014-12-01 18:40:33 +0100
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2014-12-01 18:40:50 +0100
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkXM5ua8yUsc/GLn+eSCMPw+2nP1X28+56VTOBUyopY=", "book"=>{"author"=>"Alessio Saltarin", "title"=>"Il diario di Lorely", "isbn"=>"9133''320'832", "publisher"=>"Lulu.com", "year"=>"2006"}, "commit"=>"Save Book"}
+Completed 500 Internal Server Error in 0ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/books_controller.rb:7:in `create'
+
+
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 18:42:59 +0100
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 18:43:00 +0100
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 49ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 18:43:00 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-01 18:43:00 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-01 18:43:00 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 18:43:00 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 18:43:00 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 18:43:00 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-01 18:43:00 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-01 18:43:00 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 18:43:00 +0100
+
+
+Started GET "/books/new" for 127.0.0.1 at 2014-12-01 18:43:02 +0100
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 49ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2014-12-01 18:43:20 +0100
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkXM5ua8yUsc/GLn+eSCMPw+2nP1X28+56VTOBUyopY=", "book"=>{"author"=>"Alessio Saltarin", "title"=>"Il diario di Lorely", "isbn"=>"3032233762", "publisher"=>"Lulu.com", "year"=>"2010"}, "commit"=>"Save Book"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/books_controller.rb:7:in `create'
+
+
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 18:46:13 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 136ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 18:46:14 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 18:46:14 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 18:46:14 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-01 18:46:14 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-01 18:46:14 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 18:46:14 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-01 18:46:14 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-01 18:46:14 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 18:46:14 +0100
+
+
+Started GET "/books/new" for 127.0.0.1 at 2014-12-01 18:46:16 +0100
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 73ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2014-12-01 18:46:42 +0100
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkXM5ua8yUsc/GLn+eSCMPw+2nP1X28+56VTOBUyopY=", "book"=>{"author"=>"Alessio Saltarin", "title"=>"Il diario di Lorely", "isbn"=>"326121373", "publisher"=>"Lulu.com", "year"=>"2010"}, "commit"=>"Save Book"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "books" ("author", "created_at", "isbn", "publisher", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["author", "Alessio Saltarin"], ["created_at", "2014-12-01 17:46:42.745761"], ["isbn", "326121373"], ["publisher", "Lulu.com"], ["title", "Il diario di Lorely"], ["updated_at", "2014-12-01 17:46:42.745761"], ["year", 2010.0]]
+  [1m[35m (10.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books/1
+Completed 302 Found in 30ms (ActiveRecord: 12.5ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2014-12-01 18:46:42 +0100
+
+AbstractController::ActionNotFound (The action 'show' could not be found for BooksController):
+  actionpack (4.1.7) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.0ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2014-12-01 19:00:03 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (d:/Codice/Ruby/RadRails/Biblioteca_/biblioteca/app/views/books/show.html.erb:31: syntax error, unexpected keyword_ensure, expecting $end):
+  app/views/books/show.html.erb:31: syntax error, unexpected keyword_ensure, expecting $end
+
+
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.0ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2014-12-01 19:00:18 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `author' for nil:NilClass):
+    2: 
+    3:   <p>
+    4:     <b>Autore: </b>
+    5:     <%= @book.author %>
+    6:   </p>
+    7:  
+    8:   <p>
+  app/views/books/show.html.erb:5:in `_app_views_books_show_html_erb__44176882_40746360'
+
+
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.0ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2014-12-01 19:10:33 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 75ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-01 19:10:33 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:10:33 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-01 19:10:33 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:10:33 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:10:33 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 19:10:33 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-01 19:10:33 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-01 19:10:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:10:33 +0100
+
+
+Started GET "/books/1" for 127.0.0.1 at 2014-12-01 19:13:29 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-01 19:13:29 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-01 19:13:29 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:13:29 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:29 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:29 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:29 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:29 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:29 +0100
+
+
+Started GET "/books/1" for 127.0.0.1 at 2014-12-01 19:13:46 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-01 19:13:46 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-01 19:13:46 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:13:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:47 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:47 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:47 +0100

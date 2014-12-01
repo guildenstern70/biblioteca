@@ -5,10 +5,6 @@ Rails.application.routes.draw do
   
   resources :books
   
-  
-  
-  
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

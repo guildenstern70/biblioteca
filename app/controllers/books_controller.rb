@@ -4,7 +4,13 @@ class BooksController < ApplicationController
   end
  
   def create
-    render text: params[:book].inspect
+    @book = Book.new(params[:book])
+    @book.save
+    redirect_to @book
+  end
+  
+  def show
+    @book = Book.find(params[:id])
   end
 
   
