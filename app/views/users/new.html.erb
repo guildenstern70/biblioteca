@@ -1,0 +1,28 @@
+<h1>Inserimento nuovo utente</h1>
+
+<%= form_for :user, url: users_path do |f| %>
+  <p>
+    Nome<br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    Cognome<br>
+    <%= f.text_field :surname %>
+  </p>
+  
+  <p>
+    Nr. di telefono<br>
+    <%= f.text_field :telephone %>
+  </p>
+  
+  <p>
+  	<br>
+    Data di registrazione<br>
+    <%= f.text_field :registration, :value => @current_date_time, :disabled => true %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Crea nuovo utente" %>
+  </p>
+<% end %>

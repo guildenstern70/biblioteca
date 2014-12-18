@@ -980,3 +980,431 @@ Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:47 +0100
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:13:47 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:24:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.9ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (112.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:34:45 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (36.1ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (wrong number of arguments (3 for 2)):
+    13:   
+    14:   <p>
+    15:     Data di registrazione<br>
+    16:     <%= f.text_field :registration, :current_date_time, disabled: true %>
+    17:   </p>
+    18:  
+    19:   <p>
+  app/views/users/new.html.erb:16:in `block in _app_views_users_new_html_erb__62842919_46777548'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__62842919_46777548'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:35:28 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (wrong number of arguments (3 for 2)):
+    13:   
+    14:   <p>
+    15:     Data di registrazione<br>
+    16:     <%= f.text_field :registration, :current_date_time, disabled:true %>
+    17:   </p>
+    18:  
+    19:   <p>
+  app/views/users/new.html.erb:16:in `block in _app_views_users_new_html_erb__62842919_33597636'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__62842919_33597636'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (15.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:35:37 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `merge' for :current_date_time:Symbol):
+    13:   
+    14:   <p>
+    15:     Data di registrazione<br>
+    16:     <%= f.text_field :registration, :current_date_time %>
+    17:   </p>
+    18:  
+    19:   <p>
+  app/views/users/new.html.erb:16:in `block in _app_views_users_new_html_erb__62842919_41228616'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__62842919_41228616'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:38:55 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 776ms (Views: 775.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 12:38:55 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-02 12:38:55 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-02 12:38:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 12:38:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 12:38:56 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 12:38:56 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 12:38:56 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 12:38:56 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-02 12:38:56 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 12:38:56 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-02 12:38:56 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:39:43 +0100
+
+SyntaxError (D:/Codice/Ruby/RadRails/Biblioteca_/biblioteca/app/controllers/users_controller.rb:7: syntax error, unexpected '=', expecting keyword_end
+    :current_date_time = Time.new.to_s
+                        ^):
+  app/controllers/users_controller.rb:7: syntax error, unexpected '=', expecting keyword_end
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:40:42 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-02 12:40:42 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 12:40:42 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-02 12:40:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 12:40:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 12:40:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 12:40:43 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 12:40:43 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-02 12:40:43 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-02 12:40:43 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 12:40:43 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 12:40:43 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 59ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 12:41:09 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 12:43:54 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:44:38 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-02 12:44:39 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-02 12:44:39 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 12:44:39 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 12:44:39 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:39 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:39 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:39 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:39 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:39 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:39 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:39 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:44:42 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-02 12:44:42 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-02 12:44:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 12:44:42 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 12:44:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:42 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:42 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:42 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 12:44:43 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:47:52 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 12:47:52 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-02 12:47:52 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-02 12:47:52 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 12:47:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 12:47:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 12:47:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 12:47:52 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-02 12:47:52 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-02 12:47:52 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 12:47:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 12:47:53 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-02 12:48:16 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-12-02 12:48:16 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 12:48:16 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 12:48:16 +0100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-12-02 12:48:16 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 12:48:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 12:48:17 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 12:48:17 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-12-02 12:48:17 +0100
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-02 12:48:17 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 12:48:17 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 12:48:17 +0100

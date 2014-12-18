@@ -1,0 +1,21 @@
+<h1>Utenti della biblioteca</h1>
+
+<table border="1">
+  <tr>
+    <th>Nome</th>
+    <th>Cognome</th>
+    <th>Nr. di telefono</th>
+  </tr>
+ 
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.surname %></td>
+      <td><%= user.telephone %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p>
+<a href="/users/new">Aggiungi un nuovo utente.</a>
+</p>

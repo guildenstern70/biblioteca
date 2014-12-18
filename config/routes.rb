@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
   get 'index' => 'main#index'
   get 'home' => 'main#index'
+  get 'lend/:id' => 'books#lend'
+  
   root 'main#index'
   
   resources :books
+  resources :users
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,0 +1,21 @@
+<h1>Catalogo libri</h1>
+ 
+<table border="1">
+  <tr>
+    <th>Autore</th>
+    <th>Titolo</th>
+    <th>&nbsp;</th>
+  </tr>
+ 
+  <% @books.each do |book| %>
+    <tr>
+      <td><%= book.author %></td>
+      <td><a href="/books/<%= book.id %>"><%= book.title %></a></td>
+      <td><button onclick="javascript:location.href='lend/<%= book.id %>'">Prestito</button></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><a href="/books/new">Aggiungi un libro al catalogo</a></p>
+
+
