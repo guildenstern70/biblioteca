@@ -1,0 +1,29 @@
+<h1>Prestito libri</h1>
+
+<%= form_for :book, url: book_path, method: :patch do |f| %>
+
+  <p>
+    <b>Autore: </b>
+    <%= @book.author %>
+  </p>
+ 
+  <p>
+    <b>Titolo: </b>
+    <%= @book.title %>
+  </p>
+  
+  <p>Dare in prestito a: 
+  	<%= f.select(:user_id, User.all.map { |user| [user.surname, user.id] }) %>
+  </p>
+  
+  <p>
+    <%= f.submit "Assegna libro in prestito" %>
+  </p>
+  
+<% end %>
+  
+<p><br>
+  <a href="/books">Torna al catalogo libri</a>
+</p>
+
+ 

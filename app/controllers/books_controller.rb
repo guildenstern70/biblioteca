@@ -17,7 +17,13 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
   end
   
-  def lend
+  def update
+    @book = Book.find(params[:id])
+    @book.update(params[:book])
+    redirect_to @book
+  end
+  
+  def edit
     @book = Book.find(params[:id])
   end
 

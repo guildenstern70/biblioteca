@@ -25,6 +25,15 @@
     <%= @book.year %>
   </p>
   
+  <p><i>
+  <% if @book.user_id.nil? %>
+  	Libro disponibile per il prestito.
+  <% else %>
+  	Libro in prestito a 
+  	<%= User.find(@book.user_id).surname %>
+  <% end %>
+  </i></p>
+  
   <br>
   
   <p><a href="/books">Torna al catalogo libri</a></p>
