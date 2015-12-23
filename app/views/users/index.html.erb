@@ -6,16 +6,14 @@
     <th>Cognome</th>
     <th>Nr. di telefono</th>
   </tr>
- 
+
   <% @users.each do |user| %>
-    <tr>
-      <td><%= user.name %></td>
-      <td><%= user.surname %></td>
-      <td><%= user.telephone %></td>
-    </tr>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.surname %></td>
+        <td><%= user.phonenr %></td>
+      </tr>
   <% end %>
 </table>
 
-<p>
-<a href="/users/new">Aggiungi un nuovo utente.</a>
-</p>
+<p><a href="/">Home</a></p>

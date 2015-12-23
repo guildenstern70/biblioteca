@@ -5,32 +5,10 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-	<style>
-		li {
-		    float: left;
-		}
-		
-		li a {
-		    display: block;
-		    width: 60px;
-		}
-	</style>
 </head>
 <body>
-	
-	<nav>
-		<ul style="list-style-type: none; margin: 0; padding: 0;">
-	      <li><a href="/home">Home</a></li>
-	      <li><a href="/books">Libri</a></li>
-	      <li><a href="/users">Utenti</a></li>
-	      <li><a href="#">Info</a></li>
-    	</ul>
-	</nav>
-	<p>&nbsp;</p>
-	<hr>
-	<div>
-		<%= yield %>
-	<div>
+
+<%= yield %>
 
 </body>
 </html>

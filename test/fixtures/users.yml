@@ -1,11 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  surname: MyString
-  telephone: MyString
+  name: Alessio
+  surname: Saltarin
+  phonenr: 345-5678983
 
 two:
-  name: MyString
-  surname: MyString
-  telephone: MyString
+  name: Elena
+  surname: Miranda
+  phonenr: 345-6789012
+

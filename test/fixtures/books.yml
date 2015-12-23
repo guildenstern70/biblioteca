@@ -1,15 +1,18 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  author: MyString
-  title: MyString
-  isbn: MyString
-  publisher: MyString
-  year: 9.99
+  author: Edgar Allan Poe
+  title: Il pozzo e il pendolo
+  isbn: 390838973279
+  publisher: Mondadiri
+  user_id: NULL
+  year: 1980
 
 two:
-  author: MyString
-  title: MyString
-  isbn: MyString
-  publisher: MyString
-  year: 9.99
+  author: Herman Melville
+  title: La Balena Bianca
+  isbn: 390838973279
+  publisher: Rizzola
+  user_id: 1
+  year: 1992
+
