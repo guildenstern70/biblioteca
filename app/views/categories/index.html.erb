@@ -1,6 +1,5 @@
 <h1>Categorie di libri</h1>
 
-<%= form_for :category, url: {action: 'create'} do |f| %>
 <table border="1">
 
   <thead>
@@ -21,6 +20,7 @@
 
 
   <tr>
+    <%= form_for :category, url: {action: 'create'} do |f| %>
     <td>
       &nbsp;
     </td>
@@ -30,13 +30,13 @@
     <td>
       <%= f.submit('+') %>
     </td>
+    <% end %>
   </tr>
   </tbody>
 
 
 </table>
 
-<% end %>
 
 
 
