@@ -1,0 +1,45 @@
+<h1>Categorie di libri</h1>
+
+<%= form_for :category, url: {action: 'create'} do |f| %>
+<table border="1">
+
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Categoria</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <% @categories.each do |category| %>
+      <tr>
+        <td><%= category.id %></td>
+        <td><%= category.category %></td>
+        <td><%= button_to '-', category, method: :delete %></td>
+      </tr>
+  <% end %>
+
+
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+      <%= f.text_field :category %>
+    </td>
+    <td>
+      <%= f.submit('+') %>
+    </td>
+  </tr>
+  </tbody>
+
+
+</table>
+
+<% end %>
+
+
+
+<p>
+  <a href="/">Home</a>
+</p>

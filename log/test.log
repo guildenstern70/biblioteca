@@ -1,0 +1,76 @@
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `books`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `books` (`author`, `title`, `isbn`, `publisher`, `user_id`, `year`, `created_at`, `updated_at`, `id`) VALUES ('Edgar Allan Poe', 'Il pozzo e il pendolo', '390838973279', 'Mondadiri', NULL, 1980, '2015-12-23 14:19:56', '2015-12-23 14:19:56', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `isbn`, `publisher`, `user_id`, `year`, `created_at`, `updated_at`, `id`) VALUES ('Herman Melville', 'La Balena Bianca', '390838973279', 'Rizzola', 1, 1992, '2015-12-23 14:19:56', '2015-12-23 14:19:56', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `users` (`name`, `surname`, `phonenr`, `created_at`, `updated_at`, `id`) VALUES ('Alessio', 'Saltarin', '345-5678983', '2015-12-23 14:19:56', '2015-12-23 14:19:56', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `users` (`name`, `surname`, `phonenr`, `created_at`, `updated_at`, `id`) VALUES ('Elena', 'Miranda', '345-6789012', '2015-12-23 14:19:56', '2015-12-23 14:19:56', 298486374)
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------
+UserTest: test_number_of_users
+------------------------------
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------
+BooksControllerTest: test_available_for_rent
+--------------------------------------------
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  `books`.* FROM `books` WHERE `books`.`isbn` = '390838973279' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+BooksControllerTest: test_book_author
+-------------------------------------
+  [1m[35mBook Load (0.1ms)[0m  SELECT  `books`.* FROM `books` WHERE `books`.`isbn` = '390838973279' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------
+MainControllerTest: test_should_get_index
+-----------------------------------------
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 152ms (Views: 152.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `books`[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `books` (`author`, `title`, `isbn`, `publisher`, `user_id`, `year`, `created_at`, `updated_at`, `id`) VALUES ('Edgar Allan Poe', 'Il pozzo e il pendolo', '390838973279', 'Mondadiri', NULL, 1980, '2015-12-23 14:20:33', '2015-12-23 14:20:33', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `isbn`, `publisher`, `user_id`, `year`, `created_at`, `updated_at`, `id`) VALUES ('Herman Melville', 'La Balena Bianca', '390838973279', 'Rizzola', 1, 1992, '2015-12-23 14:20:33', '2015-12-23 14:20:33', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `users` (`name`, `surname`, `phonenr`, `created_at`, `updated_at`, `id`) VALUES ('Alessio', 'Saltarin', '345-5678983', '2015-12-23 14:20:33', '2015-12-23 14:20:33', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `users` (`name`, `surname`, `phonenr`, `created_at`, `updated_at`, `id`) VALUES ('Elena', 'Miranda', '345-6789012', '2015-12-23 14:20:33', '2015-12-23 14:20:33', 298486374)
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------
+MainControllerTest: test_should_get_index
+-----------------------------------------
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 109ms (Views: 108.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------
+BooksControllerTest: test_available_for_rent
+--------------------------------------------
+  [1m[35mBook Load (0.3ms)[0m  SELECT  `books`.* FROM `books` WHERE `books`.`isbn` = '390838973279' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+BooksControllerTest: test_book_author
+-------------------------------------
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  `books`.* FROM `books` WHERE `books`.`isbn` = '390838973279' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------
+UserTest: test_number_of_users
+------------------------------
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
