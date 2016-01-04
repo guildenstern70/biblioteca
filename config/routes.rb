@@ -4,7 +4,11 @@ Rails.application.routes.draw do
 
   get 'main/index'
 
-  resources :books
+  resources :books do
+    member do
+      post 'send_comment'
+    end
+  end
   resources :users
   resources :categories
 

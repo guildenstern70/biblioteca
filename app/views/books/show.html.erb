@@ -33,5 +33,28 @@
   <% end %>
 </i></p>
 
+<hr>
+
+<% if @comment_sent %>
+
+    <div id='messaggio_inviato' style="color: whitesmoke; background-color: darkred">
+      <b>Il commento &egrave; stato inviato alla Redazione, grazie!</b>
+    </div>
+
+<% else %>
+
+    <div id='contattateci'>
+
+      <%= form_for :book, url: {action: 'send_comment'}, html: {id: 'comment_form' } do %>
+          e-Mail: <%= text_field_tag 'email' %><br />
+          Messaggio: <br /> <%= text_area_tag 'message', nil, rows: 10 %><br />
+          <%= submit_tag 'Invia un commento' %>
+      <% end %>
+
+    </div>
+
+<% end %>
+
+<hr>
 
 <p><a href="/books">Torna al catalogo libri</a></p>
